@@ -23,6 +23,7 @@ body{
     #profile{
         width: 4%;
         border-radius: 50%;
+        margin-left: 10px;
     }
 }
 
@@ -192,6 +193,10 @@ a:hover{
     background-color: #ecf4fc;
     border-radius: 10px;
     margin: 10px;
+}
+
+.hobbies__name{
+    list-style: none;
 }
 
 .hobbies__box:hover{
