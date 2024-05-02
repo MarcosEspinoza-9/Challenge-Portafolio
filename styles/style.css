@@ -12,10 +12,9 @@ body{
      flex-direction: column;
      width: 100%;
      height: auto;
-     
 }
 
-
+/** MENÚ DE NAVEGACION*/
 .logo_Menu{
     border: red  solid;
     display: flex;
@@ -27,6 +26,7 @@ body{
     }
 }
 
+/** PRESENTACIÓN */
 .menu_lista{
     display: flex;
     flex-direction: row;
@@ -34,30 +34,173 @@ body{
     align-items:center ;
     width: 100%;
     gap: 20px;
-    list-style: none;
+    list-style:  none;
     margin-left: 250px;
     text-decoration: none;
 }
 
-
-
 .presentacion{
     border: yellow  solid;
+    display: flex;
+    flex-direction: row-reverse;  
+    width: 100%;
 }
 
+.presentacion_imagen{
+     width: 100%;
+     height: auto; 
+    margin-left: 50px;
+
+
+     .fotoPersonal{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        width: 50%;
+        border-radius: 50%;
+        
+     }
+}
+
+#titulo{
+    margin-left: 50px;
+
+}
+
+.presentacion_detalles p{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.social_item::after{
+    content: " 🡥 ";
+}
+
+.social_lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    list-style:  none;
+    text-decoration: none;
+}
+
+/** SOBRE MI */
 .acerca{
     border: yellowgreen  solid;
-
+    background-color:  #ecf4fc ;
 }
+
+.acerca_contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
+
+#sobre {
+    font-size: 30px;
+}
+
+
+img{
+    filter: brightness(1.1); /** hacer la imagen sin fondo*/
+    mix-blend-mode: multiply;
+    width: 60%;
+}
+
+
+
+a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+}
+
+a:hover{
+    
+    color: rgb(167, 37, 159);
+}
+
+/** SKILLS*/
 
 .skills_principal{
-    border: blue solid;
-
+    /* border: #0000ff solid; */
+    background-color: rgba(128, 128, 128, 0.315);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.skills__line{
+    border: #0000ff solid; 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.skills__box{
+    display: flex;
+    width: 100%;
+    background-color: #ecf4fc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/** ANIMACION DE SKILLS*/
+.skills__box:hover{
+    transform: scale(110%);
+    cursor: pointer;
+   background-color: rgba(109, 168, 230, 0.298);
+}
+
+
+
+.skills__name{
+    list-style: none;
+    text-align: start;
+}
+
+/** HOBBIES */
 .hobbies{
     border: rgb(160, 0, 218) solid;
+    background-color: rgba(128, 128, 128, 0.315);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.hobbies__box{
+    display: flex;
+    width: 100%;
+    background-color: #ecf4fc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.hobbies__box:hover{
+    transform: scale(110%);
+    cursor: pointer;
+   background-color: rgba(109, 168, 230, 0.298);
+}
+
+/** SECCIÓN ACADEMICA*/
 
 .academico{
     border: rgb(0, 255, 55)  solid;
