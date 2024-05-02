@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.principal{
+    /* border: salmon 6px solid;
+     */
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: auto;
+     
+}
+
+
+.logo_Menu{
+    border: red  solid;
+    display: flex;
+    align-items: center;
+    
+    #profile{
+        width: 4%;
+        border-radius: 50%;
+    }
+}
+
+.menu_lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: end; /**alinear elementos*/
+    align-items:center ;
+    width: 100%;
+    gap: 20px;
+    list-style: none;
+    margin-left: 250px;
+    text-decoration: none;
+}
+
+
+
+.presentacion{
+    border: yellow  solid;
+}
+
+.acerca{
+    border: yellowgreen  solid;
+
+}
+
+.skills_principal{
+    border: blue solid;
+
+}
+
+.hobbies{
+    border: rgb(160, 0, 218) solid;
+}
+
+.academico{
+    border: rgb(0, 255, 55)  solid;
+
+}
+
+.academic__courses__box{
+    border: red  solid;
+
+}
+
+.academic__courses__list{
+    border: rgb(0, 183, 255)  solid;
+
+}
+
+.experiencie__box{
+    border: rgb(0, 246, 226) solid;
+}
+
+.experience__box{
+    border: rgb(0, 255, 55);
+}
+
+.formcontato{
+    border: rosybrown solid;
+}
+
+.footer{
+    border:rgb(160, 0, 218) solid;
+}
