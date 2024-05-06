@@ -27,16 +27,29 @@ body{
     }
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
 /** PRESENTACIÓN */
 .menu_lista{
     display: flex;
     flex-direction: row;
     justify-content: end; /**alinear elementos*/
-    align-items:center ;
-    width: 100%;
+    text-align: end;
+    /* align-items:center ; */
     gap: 20px;
     list-style:  none;
-    margin-left: 250px;
     text-decoration: none;
 }
 
@@ -92,8 +105,10 @@ body{
 
 /** SOBRE MI */
 .acerca{
+    display: flex;
     border: yellowgreen  solid;
     background-color:  #ecf4fc ;
+
 }
 
 .acerca_contenedor{
@@ -102,6 +117,7 @@ body{
     width: 60%;
     margin-left: 50px;
     padding-bottom: 50px;
+    border: #000000 solid;
 }
 
 #sobre {
@@ -207,33 +223,330 @@ a:hover{
 
 /** SECCIÓN ACADEMICA*/
 
-.academico{
+#formacion{
     border: rgb(0, 255, 55)  solid;
+    display: flex;
+    flex-direction: column;
+}
 
+.academic__title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.imagenacademica{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
 }
 
 .academic__courses__box{
-    border: red  solid;
-
+    /* border: rgb(13, 0, 255)  solid; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .academic__courses__list{
-    border: rgb(0, 183, 255)  solid;
+    border: rgb(221, 0, 255)  solid;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+    
 
+.imagenacademica{
 }
 
-.experiencie__box{
+
+/** SECCION DE EXPERIENCIA PROFECIONAL*/
+.experiencie__box1 {
     border: rgb(0, 246, 226) solid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
 }
 
-.experience__box{
-    border: rgb(0, 255, 55);
+
+.experiencie__box2 {
+    border: rgb(0, 246, 226) solid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+
 }
+
+.experiencie__box3 {
+    border: rgb(0, 246, 226) solid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+
+    #molca{
+        border-radius: 30px ;
+    }
+}
+
+.experiencie__box4{
+    border: rgb(0, 246, 226) solid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.experience__img:hover {
+    transform: scale(1.1); /* Zoom de 10% al pasar el cursor */
+    transition: transform 0.5s ease-in-out ; /* Transición para el zoom */
+}
+
+
+.experience__img:not(:hover) {
+    /* Vuelve al tamaño original de forma gradual */
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);
+}
+
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    /* background-color: aqua; */
+    width: 20%;
+    height: auto;
+}
+
+
+.experience__description{
+    /* border: red solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/** BOTON REPOSITORIO*/
+.experiencia__botao--repo{
+    background: #ffffff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 10px 10px;
+    border-radius: 20px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.experiencia__botao--repo:hover{
+    color: #fff; /* color de fuente hover */
+}
+
+.experiencia__botao--repo::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .experiencia__botao--repo:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+/** BOTON DE DEMO*/
+.experience__botao--demo{
+    background: #ffffff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 10px 10px;
+    border-radius: 20px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.experience__botao--demo:hover{
+    color: #fff; /* color de fuente hover */
+}
+
+.experience__botao--demo::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .experience__botao--demo:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+.experience__img{
+    border-radius: 30px;
+}
+
+.experience__section__title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+/** FORMULARIO DE CONTACTO */
+
+.formcontato__contacto{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
 
 .formcontato{
     border: rosybrown solid;
+    display: flex;
+    width: 100%;
 }
 
-.footer{
-    border:rgb(160, 0, 218) solid;
+.formcontato--esquerda{
+    border: rgb(160, 0, 218) solid;
+    display: flex;
+    width: 40%;
+}
+
+.formcontato__text{
+    border: #ff9900 solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__title , .formcontato__subtext{
+    display: flex;
+    justify-content: center;
+}
+
+.formcontato__form{
+    border: #0000ff solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formcontato__img{
+    display: flex;
+    width: 100%;
+}
+
+.formcontato__botao{
+    width: 18%;
+    background: #ffffff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    border-radius: 10px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.formcontato__botao:hover{
+    color: #fff; /* color de fuente hover */
+}
+
+.formcontato__botao::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .formcontato__botao:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+
+  .footer {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__rodape {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#tel{
+}
+
+.footer__rodape p {
+    /* margin: 10px; */
+}
+
+.contact-info p {
+    /* margin: 5px; */
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #ffd700; /* Cambia el color al pasar el cursor */
 }
